@@ -1,6 +1,10 @@
 @media (max-width: 1101px) {
+    .content-span {
+        font-size: 4rem;
+    }
+
     .name-text {
-        font-size: 18px;
+        font-size: 16px;
     }
     
     .profile-text {
@@ -9,20 +13,6 @@
 }
 
 @media (max-width: 955px) {
-    .name-text {
-        font-size: 16px;
-    }
-    
-    .profile-text {
-        font-size: 13px;
-    }
-
-    .profile-sinopse {
-        font-size: 15px;
-    }
-}
-
-@media (max-width: 915px) {
     .content-span {
         font-size: 4rem;
     }
@@ -38,33 +28,24 @@
     .profile-sinopse {
         font-size: 18px;
     }
+    
+}
 
-    .project-slider {
-        margin: 35px auto 0 auto;
-        width: 500px;
-        height: 230px;
-    }
-    
-    .sliders {
-        width: 400%;
-        height: 300px;
-    }
-    
-    .slide img {
-        width: 500px;
-    }
-    
-    .manual-navigation {
-        width: 500px;
-        margin-top: 0;
+@media (max-width: 915px) {
+    .content-span {
+        font-size: 4rem;
     }
 
-    .navigation-auto {
-        position: absolute;
-        width: 500px;
-        margin-top: 300px;
-        display: flex;
-        justify-content: center;
+    .name-text {
+        font-size: 14px;
+    }
+    
+    .profile-text {
+        font-size: 15px;
+    }
+
+    .profile-sinopse {
+        font-size: 18px;
     }
 
     .content-form {
@@ -75,6 +56,7 @@
         align-items: center;
         justify-content: center;
     }
+
     .form1 {
         width: 70%;
         display: flex;
@@ -102,23 +84,31 @@
    
 }
 
-@media (max-width: 955px) {
+@media (max-width: 831px) {
+    .button-custom{
+        width: 100px;
+        height: 30px;
+      }
+}
+
+@media (max-width: 794px) {
     .name-text {
-        font-size: 16px;
+        font-size: 12px;
     }
     
     .profile-text {
-        font-size: 13px;
-    }
-
-    .profile-sinopse {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
+
 @media (max-width: 743px) {
+    li {
+        font-size: 18px;
+    }
+
     .content-span {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .profile-container {
@@ -135,12 +125,12 @@
     
     .profile-card {
         width: 70%;
-        height: 300px;
+        height: 350px;
     }
 
     .profile-image {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     
     .name-text {
@@ -148,7 +138,7 @@
     }
     
     .profile-text {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .divider {
@@ -158,16 +148,22 @@
     .profile-sinopse {
         width: 80%;
         font-size: 17px;
-        margin-top: 40px;
+        margin-top: 15px;
+        margin-left: 0;
     }
 }
 
+@media (max-width: 653px) {
 
+    .content-span {
+        font-size: 3rem;
+    }
 
+}
 @media (max-width: 570px) {
 
     .content-span {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .contact{
@@ -180,6 +176,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 40px 20px;
+        z-index: 2;
     }
 
     .port-toggle {
@@ -197,6 +194,7 @@
     }
 
     .nav {
+        background-color: transparent;
         width: 100%;
     }
     
@@ -228,7 +226,7 @@
 
     .header-toggle .menuToggle{
         position: fixed;
-        right: 100px;
+        right: 20px;
         width: 30px;
         height: 20px;
         display: flex;
@@ -271,6 +269,7 @@
 @media (max-width: 570px) {
 
     .profile-card {
+        margin-top: 20px;
         border: none;
         box-shadow: none;
     }
@@ -288,44 +287,16 @@
         border:  1px solid #08293f;
     }
 
-    .project-slider {
-        margin: 35px auto 0 auto;
-        width: 400px;
-        height: 190px;
-    }
-    
-    .sliders {
-        width: 400%;
-        height: 300px;
-    }
-    
-    .slide img {
-        width: 400px;
-    }
-    
-    .manual-navigation {
-        width: 350px;
-        margin-top: 0;
-    }
-
-    .navigation-auto {
-        position: absolute;
-        width: 350px;
-        margin-top: 300px;
-        display: flex;
-        justify-content: center;
-    }
-
 }
 
 @media (max-width: 570px) {
 
     .content-span {
-        font-size: 1.5rem;
+        width: 90%;
     }
-    
-    h1{
-        font-size: 20px;
+
+    .button{
+        font-size: 15px;
     }
 
     .profile-sinopse{
@@ -341,123 +312,95 @@
         min-height: 150px;
     }
 
-    .project-slider {
-        margin: 35px auto 0 auto;
-        width: 300px;
-        height: 148px;
-    }
-    
-    .sliders {
-        width: 400%;
-        height: 300px;
-    }
-    
-    .slide img {
-        width: 300px;
-    }
-    
-    .manual-navigation {
-        width: 265px;
-    }
-
-    .navigation-auto {
-        width: 265px;
-        margin-top: 300px;
-    }
-
     i {
-        font-size: 20px;
-    }
-
-}
-
-@media (max-width: 450px) {
-    .name-text{
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 450px) {
-
-    .profile-card{
-        padding: 0;
-    }
-
-    .name-text{
-        font-size: 12px;
-        font-weight: bold;
-    }
-
-    .profile-sinopse{
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 450px) {
-    .name-text{
-        font-size: 13px;
-    }
-
-    .profile-text{
-        font-size: 10px;
-    }
-
-    .profile-sinopse{
-        font-size: 14px;
+        font-size: 30px;
     }
 
     form{
+        margin-top: 50px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+    
+    textarea {
+        width: 80%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    footer {
+        margin-top: 15px;  
+    }
+}
+
+@media (max-width: 521px) {
+    .content-span{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 483px) {
+
+    .profile-card {
         margin-top: 20px;
     }
 
-    h1{
+    .content-span{
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .name-text{
+        font-size: 20px;
+    }
+    
+    .profile-text{
+        font-size: 20px;
+    }
+    
+    .profile-sinopse{
+        font-size: 14px;
+    }
+    
+    .profile-card{
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    .profile-sinopse{
         font-size: 17px;
+        margin-top: 15px;
+    }
+
+    form{
+        margin-top: 40px;
     }
 
     label {
-        font-size: 11px;
+        font-size: 15px;
     }
 }
 
-@media (max-width: 314px) {
+@media (max-width: 424px) {
 
     .content-span {
         display: flex;
-        flex-direction: column;
+        font-size: 25px;
     }
-
-    span{
-        font-size: 15px;
-    }
-
-    .project-slider {
-        width: 200px;
-        height: 100px;
-    }
-    
-    .sliders {
-        width: 400%;
-        height: 300px;
-    }
-    
-    .slide img {
-        width: 200px;
-    }
-    
-    .manual-navigation {
-        width: 200px;
-    }
-
-    .navigation-auto {
-        width: 200px;
-        margin-top: 300px;
-    }
-
 }
 
-@media (max-width: 314px) {
+@media (max-width: 345px) {
+
+    .content-span {
+        font-size: 20px;
+    }
 
     .profile-card{
+        margin-top: 20px;
         padding: 0;
     }
 
@@ -470,29 +413,13 @@
     }
 
     .profile-sinopse{
+        font-size: 15px;
         margin-top: 0;
     }
+}
 
-    .project-slider {
-        width: 200px;
-        height: 100px;
-    }
-    
-    .sliders {
-        width: 400%;
-        height: 300px;
-    }
-    
-    .slide img {
-        width: 200px;
-    }
-    
-    .manual-navigation {
-        width: 100px;
-    }
-
-    .navigation-auto {
-        width: 100px;
-        margin-top: 300px;
+@media (max-width: 314px) {
+    .content-span {
+        font-size: 15px;
     }
 }
