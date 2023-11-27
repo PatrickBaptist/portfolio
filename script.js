@@ -2,21 +2,23 @@ onload = function() {
   home.style = styles
 }
 
-let count = 1;
-document.getElementById("radio1").checked = true;
+let interval = 0
+let maxSlider = document.querySelectorAll('.slide').length - 1
 
-setInterval( function () {
-  nextImage();
-}, 5000)
+acao()
 
-function nextImage() {
-  count ++;
-  if ( count > 5) {
-    count = 1;
-  }
+function acao() {
+  let img = document.querySelectorAll('.slide img')
 
-  document.getElementById("radio" + count).checked = true;
+  setInterval(function(){
+    img[interval].style.display = "none"
+    interval++
+    if(interval > maxSlider) {
+      interval = 0
+    }
 
+    img[interval].style.display = "block"
+  }, 2000)
 }
 
 let listItem = document.querySelectorAll('.nav li')
