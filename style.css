@@ -223,10 +223,6 @@ li:hover {
     justify-content: center;
 }
 
-.profile-content {
-    width: 30%;
-}
-
 .profile-card {
     display: flex;
     flex-direction: column;
@@ -235,7 +231,7 @@ li:hover {
     background-color: #fff;
     border: 1px solid #08293f;
     box-shadow: 5px 10px #f1bc8c;
-    padding: 30px;
+    padding: 20px;
 }
 
 .profile-image {
@@ -285,7 +281,7 @@ li:hover {
   
     position: absolute;
   
-    background: #ca8f61;
+    background: #f1bc8c;
   
     transition: all .3s;
     z-index: -1;
@@ -311,8 +307,8 @@ li:hover {
 
 .icons-container {
     display: flex;
-    width: 100%;
     justify-content: space-around;
+    width: 100%;
 }
 
 .icon-item {
@@ -335,17 +331,14 @@ li:hover {
     flex-direction: column;
     align-items: center;
     background-color: #fff;
-    padding: 0 10px;
 }
 
 .content {
     width: 100%;
-    height: 40vh;
-    display: flex; 
-    margin-top: 30px;
+    display: flex;
     overflow: hidden;
     overflow-x: scroll;
-    box-sizing: border-box
+    margin-top: 80px;
 }
 .content::-webkit-scrollbar {
     height: 10px;
@@ -353,23 +346,22 @@ li:hover {
 }
 
 .content::-webkit-scrollbar-thumb {
-    background-color: #08293f;
+    background-color: #f1bc8c;
 }
 
 .project-content {
     width: 100%;
-    height: 40vh;
+    height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 5px;
-    box-sizing: border-box
 }
 
 .button-custom{
     display: block;
-    width: 250px;
+    width: 200px;
     height: 30px;
     position: relative;
     border: 1px solid #08293f;
@@ -380,7 +372,7 @@ li:hover {
     overflow: hidden;
     cursor: pointer;
     z-index: 1;
-    margin-top: 15px;
+    margin-top: 10px;
   }
   
   .button-custom::before{
@@ -390,7 +382,7 @@ li:hover {
   
     position: absolute;
   
-    background: #adbac8;
+    background: #f1bc8c;
   
     transition: all .3s;
     z-index: -1;
@@ -414,6 +406,7 @@ li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .name-project {
@@ -436,16 +429,6 @@ li:hover {
     -webkit-box-orient: vertical; 
 }
 
-.project p::-webkit-scrollbar {
-    width: 5px;
-    background-color: #ffffff;
-
-}
-
-.project p::-webkit-scrollbar-thumb {
-    background-color: #08293f;
-}
-
 .content-project {
     width: 85%;
     height: 52vh;
@@ -460,9 +443,9 @@ li:hover {
 
 .slide img{
     width: 100%;
-    height: 100%;
+    height: 300px;
     position: absolute;
-    border: 2px solid #08293f;
+    border: 1px solid #08293f;
 }
 
 h1 {
@@ -522,9 +505,7 @@ form {
     justify-content: center;
     font-weight: bold;
     font-family: Helvetica, sans-serif;
-    width: 100%;
-    height: 100%;
-    padding: 20px;
+    width: 100%;   
     border-radius: 5px;
     color: #08293f;
 }

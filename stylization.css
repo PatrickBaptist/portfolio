@@ -86,7 +86,7 @@
 
 @media (max-width: 831px) {
     .button-custom{
-        width: 100px;
+        width: 150px;
         height: 30px;
       }
 }
@@ -269,7 +269,6 @@
 @media (max-width: 570px) {
 
     .profile-card {
-        margin-top: 20px;
         border: none;
         box-shadow: none;
     }
@@ -300,6 +299,7 @@
     }
 
     .profile-sinopse{
+        margin-top: 40px;
         font-size: 16px;
     }
 
@@ -314,10 +314,6 @@
 
     i {
         font-size: 30px;
-    }
-
-    form{
-        margin-top: 50px;
     }
 
     .form-container {
@@ -357,15 +353,19 @@
     .name-text{
         font-size: 20px;
     }
+
+    .profile-text{
+        font-size: 20px;
+    }
     
     .profile-text{
         font-size: 20px;
     }
     
-    .profile-sinopse{
-        font-size: 14px;
+    .profile-container {
+        justify-content: center;
     }
-    
+
     .profile-card{
         margin-top: 20px;
         padding: 0;
@@ -373,11 +373,16 @@
 
     .profile-sinopse{
         font-size: 17px;
-        margin-top: 15px;
+        margin-bottom: 60px;
     }
 
-    form{
-        margin-top: 40px;
+    .project-container {
+        justify-content: space-around;
+    }
+
+    .container-form{
+        display: flex;
+        justify-content: space-around;
     }
 
     label {
@@ -387,13 +392,20 @@
 
 @media (max-width: 424px) {
 
+    .name-text {
+        font-size: 20px;
+    }
+
     .content-span {
+        font-size: 20px;
+    }
+
+    .profile-container {
         display: flex;
-        font-size: 25px;
     }
 }
 
-@media (max-width: 345px) {
+@media (max-width: 366px) {
 
     .content-span {
         font-size: 20px;
@@ -414,7 +426,7 @@
 
     .profile-sinopse{
         font-size: 15px;
-        margin-top: 0;
+        margin-top: 50px;
     }
 }
 
