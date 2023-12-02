@@ -2,25 +2,6 @@ onload = function() {
   home.style = styles
 }
 
-let interval = 0
-let maxSlider = document.querySelectorAll('.slide').length - 1
-
-acao()
-
-function acao() {
-  let img = document.querySelectorAll('.slide img')
-
-  setInterval(function(){
-    img[interval].style.display = "none"
-    interval++
-    if(interval > maxSlider) {
-      interval = 0
-    }
-
-    img[interval].style.display = "block"
-  }, 2000)
-}
-
 let listItem = document.querySelectorAll('.nav li')
 
 function ativo () {
@@ -80,3 +61,49 @@ function clicar4(){
   projetos.style = 'none',
   contato.style = styles
 }
+
+let h = document.querySelector('.hover')
+let h1 = document.querySelector('.hover1')
+let h2 = document.querySelector('.hover2')
+let h3 = document.querySelector('.hover3')
+let h4 = document.querySelector('.hover4')
+let h5 = document.querySelector('.hover5')
+let h6 = document.querySelector('.hover6')
+let h7 = document.querySelector('.hover7')
+
+
+let img = document.getElementById('img')
+
+img.style.backgroundImage = `url('/imagens/imagem1.jpg')`
+
+h.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/imagem1.jpg')`
+})
+
+h1.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/imagem2.jpg')`
+})
+
+h2.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/imagem3.jpg')`
+})
+
+h3.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/imagem4.jpg')`
+})
+
+h4.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/imagem5.jpg')`
+})
+
+h5.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/imagem6.jpg')`
+})
+
+h6.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/imagem7.jpg')`
+})
+
+h7.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/imagem8.jpg')`
+})

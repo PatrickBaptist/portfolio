@@ -158,6 +158,9 @@
     .content-span {
         font-size: 3rem;
     }
+    .img-slider {
+        width: 80%;
+    }
 
 }
 @media (max-width: 570px) {
