@@ -26,6 +26,17 @@ html {
     background-color: #fff;
 }
 
+.portfolio {
+    position: fixed;
+    left: 5px;
+    top: 35px;
+    z-index: 0;
+    display: none;
+    font-family: Helvetica, sans-serif;
+    color: #c5ccd3;
+    border-bottom: 1px solid #ca8f61;
+}
+
 .port-toggle {
     display: none;
 }
@@ -317,10 +328,12 @@ li:hover {
 }
 
 .profile-sinopse {
-    width: 30%;
+    width: 50%;
     font-family: Helvetica, sans-serif;
     color: #08293f;
-    font-size: 20px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 18px;
     margin-left: 30px;
 }
 

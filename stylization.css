@@ -24,9 +24,9 @@
     .profile-text {
         font-size: 15px;
     }
-
+    
     .profile-sinopse {
-        font-size: 18px;
+        font-size: 16px;
     }
     
 }
@@ -42,10 +42,6 @@
     
     .profile-text {
         font-size: 15px;
-    }
-
-    .profile-sinopse {
-        font-size: 18px;
     }
 
     .content-form {
@@ -89,6 +85,10 @@
         width: 150px;
         height: 30px;
       }
+
+      .profile-sinopse {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 794px) {
@@ -147,7 +147,6 @@
 
     .profile-sinopse {
         width: 80%;
-        font-size: 17px;
         margin-top: 15px;
         margin-left: 0;
     }
@@ -163,7 +162,24 @@
     }
 
 }
+
+@media (max-width: 600px) {
+    .profile-sinopse {
+        font-size: 15px;
+    }
+
+    .profile-card {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+}
 @media (max-width: 570px) {
+
+    .portfolio{
+        display: block;
+
+    }
 
     .content-span {
         font-size: 2.5rem;
@@ -194,6 +210,7 @@
 
     h1{
         font-size: 30px;
+        z-index: 0;
     }
 
     .nav {
@@ -218,7 +235,7 @@
         align-items: center;
         flex-direction: column;
         gap: 20px;
-        z-index: 100;
+        z-index: 2;
         transition: .3s;
     }
 
@@ -271,11 +288,6 @@
 
 @media (max-width: 570px) {
 
-    .profile-card {
-        border: none;
-        box-shadow: none;
-    }
-
     textarea {
         display: block;
         width: 200px;
@@ -302,8 +314,7 @@
     }
 
     .profile-sinopse{
-        margin-top: 40px;
-        font-size: 16px;
+        margin-top: 0;
     }
 
     textarea {
@@ -342,41 +353,31 @@
 
 @media (max-width: 483px) {
 
-    .profile-card {
-        margin-top: 20px;
-    }
-
     .content-span{
         font-size: 2rem;
+    }
+
+    .profile-sinopse {
+        font-size: 14px;
     }
 }
 
 
 @media (max-width: 450px) {
     .name-text{
-        font-size: 20px;
-    }
-
-    .profile-text{
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .profile-text{
-        font-size: 20px;
+        font-size: 16px;
     }
     
     .profile-container {
         justify-content: center;
     }
 
-    .profile-card{
-        margin-top: 20px;
-        padding: 0;
-    }
-
-    .profile-sinopse{
-        font-size: 17px;
-        margin-bottom: 60px;
+    .profile-sinopse {
+        font-size: 14px;
     }
 
     .project-container {
@@ -396,40 +397,32 @@
 @media (max-width: 424px) {
 
     .name-text {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .content-span {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .profile-container {
         display: flex;
     }
+    .profile-sinopse {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 366px) {
-
     .content-span {
         font-size: 20px;
     }
 
-    .profile-card{
-        margin-top: 20px;
-        padding: 0;
-    }
-
     .name-text {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .profile-text {
-        font-size: 10px;
-    }
-
-    .profile-sinopse{
         font-size: 15px;
-        margin-top: 50px;
     }
 }
 

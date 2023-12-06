@@ -70,6 +70,8 @@ let h4 = document.querySelector('.hover4')
 let h5 = document.querySelector('.hover5')
 let h6 = document.querySelector('.hover6')
 let h7 = document.querySelector('.hover7')
+let h8 = document.querySelector('.hover8')
+let h9 = document.querySelector('.hover9')
 
 
 let img = document.getElementById('img')
@@ -106,4 +108,12 @@ h6.addEventListener('mouseover', function() {
 
 h7.addEventListener('mouseover', function() {
   img.style.backgroundImage = `url('/imagens/imagem8.jpg')`
+})
+
+h8.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/embreve.png')`
+})
+
+h9.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/embreve.png')`
 })
