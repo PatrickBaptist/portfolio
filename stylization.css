@@ -389,6 +389,11 @@
         justify-content: space-around;
     }
 
+    form {
+        margin-top: 20px;
+    }
+    
+
     label {
         font-size: 15px;
     }
