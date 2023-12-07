@@ -610,3 +610,7 @@ i {
 .fa-whatsapp:hover {
     color: green;
 }
+
+.fa-regular:hover{
+    color: red;
+}
