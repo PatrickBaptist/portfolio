@@ -21,7 +21,7 @@ menuToggle.onclick = function () {
 
 let styles = `
         border-bottom: solid;
-        border-bottom-color: #ca8f61;
+        border-bottom-color: #4831d4;
         border-bottom-width: 1px;`
 
 let home = document.querySelector('.home')
