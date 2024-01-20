@@ -103,6 +103,18 @@
 
 
 @media (max-width: 743px) {
+    .profile-container {
+        opacity: 1;
+    }
+
+    .project-container {
+        opacity: 1;
+    }
+    
+    .container-form {
+        opacity: 1;
+    }
+
     li {
         font-size: 18px;
     }
