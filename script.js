@@ -1,6 +1,31 @@
-onload = function() {
-  home.style = styles
-}
+document.addEventListener('DOMContentLoaded', function () {
+  const sections = document.querySelectorAll('section');
+
+  function isInView(element) {
+      const rect = element.getBoundingClientRect();
+      return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  }
+
+  function updateOpacity() {
+      sections.forEach(section => {
+          if (isInView(section)) {
+              section.classList.add('in-view');
+          } else {
+              section.classList.remove('in-view');
+          }
+      });
+  }
+
+  document.addEventListener('scroll', updateOpacity);
+  window.addEventListener('resize', updateOpacity);
+
+  updateOpacity();
+});
 
 let listItem = document.querySelectorAll('.nav li')
 
@@ -19,48 +44,10 @@ menuToggle.onclick = function () {
   header.classList.toggle('ativo')
 }
 
-let styles = `
-        border-bottom: solid;
-        border-bottom-color: #4831d4;
-        border-bottom-width: 1px;`
-
 let home = document.querySelector('.home')
 let tecnologias = document.querySelector('.tecnologias')
 let projetos = document.querySelector('.projetos')
 let contato = document.querySelector('.contato')
-
-home.addEventListener("click", clicar1)
-tecnologias.addEventListener("click", clicar2)
-projetos.addEventListener("click", clicar3)
-contato.addEventListener("click", clicar4)
-
-function clicar1(){
-      home.style = styles,
-      tecnologias.style = 'none',
-      projetos.style = 'none',
-      contato.style = 'none'
-}
-
-function clicar2(){
-  home.style = 'none',
-  tecnologias.style = styles,
-  projetos.style = 'none',
-  contato.style = 'none'
-}
-
-function clicar3(){
-  home.style = 'none',
-  tecnologias.style = 'none',
-  projetos.style = styles,
-  contato.style = 'none'
-}
-
-function clicar4(){
-  home.style = 'none'
-  tecnologias.style = 'none',
-  projetos.style = 'none',
-  contato.style = styles
-}
 
 let h = document.querySelector('.hover')
 let h1 = document.querySelector('.hover1')

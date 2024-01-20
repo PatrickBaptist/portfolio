@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
@@ -26,6 +28,15 @@ html {
   box-sizing: border-box;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .hero-container {
     width: 100%;
     height: 100vh;
@@ -33,18 +44,19 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #fff;
+    background-color: #ffffff;
+    scroll-snap-align: start;
 }
 
 .portfolio {
     position: fixed;
-    left: 5px;
+    left: 20px;
     top: 35px;
     z-index: 0;
     display: none;
     font-family: Helvetica, sans-serif;
-    color: #c5ccd3;
-    border-bottom: 1px solid #ca8f61;
+    color: #000000e7;
+    border-bottom: 1px solid #000000e7;
 }
 
 .port-toggle {
@@ -234,6 +246,13 @@ li:hover {
     width: 100%;
     height: 100vh;
     background-color: #4831d4;
+    scroll-snap-align: start;
+    opacity: 0; /* Começa com opacidade 0 para ficar invisível */
+    transition: opacity 0.5s; 
+}
+
+.content-container.in-view {
+    opacity: 1;
 }
 
 .profile-container {
@@ -360,6 +379,13 @@ li:hover {
     flex-direction: column;
     align-items: center;
     background-color: #000000ea;
+    scroll-snap-align: start;
+    opacity: 0; /* Começa com opacidade 0 para ficar invisível */
+    transition: opacity 0.5s; 
+}
+
+.project-container.in-view {
+    opacity: 1;
 }
 
 .content {
@@ -494,6 +520,7 @@ h1 {
 }
 
 .container-form {
+    box-sizing: border-box;
     width: 100%;
     height: 100vh;
     background-color: #4831d4;
@@ -501,6 +528,13 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    scroll-snap-align: start;
+    opacity: 0; /* Começa com opacidade 0 para ficar invisível */
+    transition: opacity 0.5s; 
+}
+
+.container-form.in-view {
+    opacity: 1;
 }
 
 .form-container {
@@ -588,7 +622,7 @@ textarea {
 
 footer {
     width: 100%;
-    height: 150px;
+    height: 45%;
     display: flex;
     justify-content: center;
     align-items: center;
