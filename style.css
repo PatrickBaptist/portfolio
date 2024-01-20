@@ -247,7 +247,7 @@ li:hover {
     height: 100vh;
     background-color: #4831d4;
     scroll-snap-align: start;
-    opacity: 0; /* Começa com opacidade 0 para ficar invisível */
+    opacity: 0;
     transition: opacity 0.5s; 
 }
 
@@ -380,7 +380,7 @@ li:hover {
     align-items: center;
     background-color: #000000ea;
     scroll-snap-align: start;
-    opacity: 0; /* Começa com opacidade 0 para ficar invisível */
+    opacity: 0;
     transition: opacity 0.5s; 
 }
 
@@ -529,7 +529,7 @@ h1 {
     align-items: center;
     justify-content: center;
     scroll-snap-align: start;
-    opacity: 0; /* Começa com opacidade 0 para ficar invisível */
+    opacity: 0;
     transition: opacity 0.5s; 
 }
 

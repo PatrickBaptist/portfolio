@@ -1,31 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const sections = document.querySelectorAll('section');
+  const sections = document.querySelectorAll('section')
 
-  function isInView(element) {
-      const rect = element.getBoundingClientRect();
-      return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
-  }
-
-  function updateOpacity() {
-      sections.forEach(section => {
-          if (isInView(section)) {
-              section.classList.add('in-view');
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('in-view')
           } else {
-              section.classList.remove('in-view');
+              entry.target.classList.remove('in-view')
           }
       });
-  }
+  }, { threshold: 1 })
 
-  document.addEventListener('scroll', updateOpacity);
-  window.addEventListener('resize', updateOpacity);
-
-  updateOpacity();
-});
+  sections.forEach(section => {
+      observer.observe(section)
+  })
+})
 
 let listItem = document.querySelectorAll('.nav li')
 
