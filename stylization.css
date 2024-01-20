@@ -103,14 +103,14 @@
 
 
 @media (max-width: 743px) {
-    .profile-container {
+    .content-container {
         opacity: 1;
     }
 
     .project-container {
         opacity: 1;
     }
-    
+
     .container-form {
         opacity: 1;
     }
