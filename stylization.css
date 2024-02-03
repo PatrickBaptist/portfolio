@@ -125,6 +125,7 @@
 
     .profile-container {
         flex-direction: column;
+        gap: 20px;
     }
     
     .profile-content {
@@ -138,6 +139,7 @@
     .profile-card {
         width: 70%;
         height: 350px;
+        border: none;
     }
 
     .profile-image {
@@ -153,8 +155,10 @@
         font-size: 15px;
     }
 
-    .divider {
-        margin: 10px 0;
+    .divider{
+        width: 120%;
+        margin: none;
+        border: 1px solid #fff;
     }
 
     .profile-sinopse {
@@ -182,7 +186,6 @@
 
     .profile-card {
         width: 100%;
-        background-color: #4831d4;
         border: none;
         box-shadow: none;
     }
@@ -196,7 +199,9 @@
     }
 
     .divider{
-        border-top: .5px solid #fff;
+        width: 80%;
+        margin: none;
+        border: 1px solid #fff;
     }
 }
 @media (max-width: 570px) {
@@ -229,7 +234,7 @@
 
     .port-toggle h1 {
         position: fixed;
-        color: #adbac8;
+        color: #ffffff;
         border-bottom: 1px solid #ffffff;
     }
 
@@ -237,10 +242,14 @@
         font-size: 30px;
         z-index: 0;
     }
-
-    .nav {
+    
+    .nav{
         background-color: transparent;
         width: 100%;
+    }
+
+    .nav ul li{
+        color: black;
     }
     
     .header-toggle .nav-list {
@@ -254,7 +263,7 @@
         top: 70px;
         width: 150px;
         height: 25vh;
-        background: #ffffff;
+        background: #fff;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -285,9 +294,9 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        background: #08293f;
+        background: #ffffff;
         transform: translateY(-10px);
-        box-shadow: 0 10px #000000;
+        box-shadow: 0 10px #fff;
         transition: 1s;
     }
 
@@ -296,14 +305,14 @@
         position: absolute;
         width: 100%;
         height: 2px;
-        background: #000000;
+        background: #fff;
         transform: translateY(10px);
         transition: 1s;
     }
 
     .header-toggle.ativo .menuToggle::before {
         transform: translateY(0) rotate(45deg);
-        box-shadow: 0 0 #adbac8;
+        box-shadow: 0 0 #fff;
     }
 
     .header-toggle.ativo .menuToggle::after {
@@ -431,7 +440,7 @@
     }
 
     .content-span {
-        font-size: 16px;
+        font-size: 25px;
     }
 
     .profile-container {
