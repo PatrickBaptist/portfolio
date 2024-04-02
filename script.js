@@ -93,3 +93,25 @@ h8.addEventListener('mouseover', function() {
 h9.addEventListener('mouseover', function() {
   img.style.backgroundImage = `url('/imagens/embreve.png')`
 })
+
+const el = document.querySelector("#content-title");
+const text = "Desenvolvedor FullStack."
+const interval = 200;
+
+function showtext(el, text, interval) {
+  var char = text.split("").reverse();
+  
+  var typer = setInterval(function() {
+  
+    if (!char.length) {
+        return clearInterval(typer)
+    }
+    
+    var next = char.pop();
+    
+    el.innerHTML += next;
+    
+  }, interval);
+  
+}
+showtext(el, text, interval);
