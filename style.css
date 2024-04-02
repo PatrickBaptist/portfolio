@@ -107,6 +107,7 @@ li:hover {
     width: 60px;
     height: 172px;
     bottom: 20px;
+    cursor: pointer;
 }
 
 .arrows path {
