@@ -48,6 +48,7 @@ let h6 = document.querySelector('.hover6')
 let h7 = document.querySelector('.hover7')
 let h8 = document.querySelector('.hover8')
 let h9 = document.querySelector('.hover9')
+let h10 = document.querySelector('.hover10')
 
 
 let img = document.getElementById('img')
@@ -90,9 +91,14 @@ h8.addEventListener('mouseover', function() {
   img.style.backgroundImage = `url('/imagens/imagem9.jpg')`
 })
 
+h10.addEventListener('mouseover', function() {
+  img.style.backgroundImage = `url('/imagens/imagem10.png')`
+})
+
 h9.addEventListener('mouseover', function() {
   img.style.backgroundImage = `url('/imagens/embreve.png')`
 })
+
 
 const el = document.querySelector("#content-title");
 const text = "Desenvolvedor FullStack."
