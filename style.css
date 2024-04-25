@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
 
 html {
     scroll-snap-type: y mandatory;
@@ -8,16 +9,18 @@ html {
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
 }
 
 *::-webkit-scrollbar {
     height: 10px;
-    background-color: #E5E5E5;
+    background-color: #474747;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #14213D;
+    background-color: #1b1b1b;
 }
 
 *,
@@ -44,7 +47,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: #E5E5E5;
+    background-color: #2e2f34;
     scroll-snap-align: start;
 }
 
@@ -64,7 +67,6 @@ html {
     position: fixed;
     top: 0;
     z-index: 2;
-    background-color: #14213D;
 }
 
 .nav-list {
@@ -76,7 +78,6 @@ html {
 }
 
 li {
-    font-family: Helvetica, sans-serif;
     font-size: 21px;
     color: #fff;
     cursor: pointer;
@@ -88,34 +89,37 @@ li:hover {
 }
 
 #content-title {
-    color: #000;
+    color: #ffffff;
     font-size: 5rem;
-    border-right: 1px solid #000;
+    border-right: 1px solid #ffffff;
     animation: blinkTextCursor 500ms infinite normal;
+    font-family: "Jersey 20", sans-serif;
 }
 
 @keyframes blinkTextCursor {
     from {
-        border-right-color: white;
+        border-right-color: #2e2f34;
     }
     to {
         border-right-color: black;
     }
 }
 
-.arrows {
+.container-arrows {
     width: 60px;
-    height: 172px;
-    bottom: 20px;
-    cursor: pointer;
+    height: 60px;
+    display: flex;
+    margin-bottom: 50px;
 }
 
-.arrows path {
-    stroke: #000;
-    fill: transparent;
-    stroke-width: 1px;
+.arrows {
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    cursor: pointer;
     animation: arrow 2s infinite;
     -webkit-animation: arrow 2s infinite;
+    transform: rotate(100deg);
 }
 
 @keyframes arrow {
@@ -136,7 +140,7 @@ li:hover {
 .content-container {
     width: 100%;
     height: 100vh;
-    background-color: #E5E5E5;
+    background-color: #34353a;
     scroll-snap-align: start;
     opacity: 0;
     transition: opacity 0.5s; 
@@ -146,9 +150,11 @@ li:hover {
     opacity: 1;
 }
 
+
+
 .profile-container {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,6 +167,7 @@ li:hover {
     width: 100%; 
     padding: 20px;
     border-radius: 10px;
+    background-color: rgb(92, 92, 92);
 }
 
 .profile-image {
@@ -173,20 +180,18 @@ li:hover {
 }
 
 .name-text {
-    font-family: Helvetica, sans-serif;
     font-weight: bold;
     font-size: 20px;
     margin-top: 15px;
-    color: #000;
+    color: #000000;
 }
 
 .profile-text {
-    font-family: Helvetica, sans-serif;
     font-size: 17px;
     text-align: center;
     width: 80%;
     margin-top: 10px;
-    color: #000;
+    color: #000000;
 }
 
 .button{
@@ -238,7 +243,7 @@ li:hover {
 
 .divider {
     width: 100%;
-    border-top: .5px solid #E5E5E5;
+    border-top: .5px solid #000000;
     margin: 20px 0;
 }
 
@@ -255,9 +260,8 @@ li:hover {
 
 .profile-sinopse {
     width: 50%;
-    font-family: Helvetica, sans-serif;
-    color: #000;
-    text-align: justify;
+    color: #ffffff;
+    
     text-indent: 30px;
     font-size: 18px;
     margin-left: 30px;
@@ -291,11 +295,11 @@ li:hover {
 }
 .content::-webkit-scrollbar {
     height: 10px;
-    background-color: #E5E5E5;
+    background-color: #1f1f1f;
 }
 
 .content::-webkit-scrollbar-thumb {
-    background-color: #14213D;
+    background-color: #ffffff;
 }
 
 .project-content {
@@ -322,7 +326,6 @@ li:hover {
     height: 30px;
     position: relative;
     border: 1px currentColor #ffffff;
-    font-family: Helvetica, sans-serif;
     font-weight: bold;
     color: #000000;
     text-decoration: none;
@@ -366,12 +369,10 @@ li:hover {
 
 .name-project {
     font-size: 17px;
-    font-family: Helvetica, sans-serif;
     color: #fff;
 }
 
 .project abbr {
-    font-family: Helvetica, sans-serif;
     font-size: 12px;
     font-weight: 500;
     color: #fff;
@@ -413,7 +414,6 @@ li:hover {
 }
 
 h1 {
-    font-family: Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: 500;
     color: #fff;;
@@ -423,7 +423,7 @@ h1 {
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
-    background-color: #E5E5E5;
+    background-color: #2e2f34;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -444,6 +444,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
+    border-radius: 2px;
 }
 
 .content-form {
@@ -454,7 +456,7 @@ h1 {
     justify-content: space-evenly;
 }
 .form1 {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -462,7 +464,7 @@ h1 {
 }
 
 .form2 {
-    width: 80%;
+    width: 100%;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -476,7 +478,6 @@ form {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-family: Helvetica, sans-serif;
     width: 100%;   
     border-radius: 5px;
     color: #000000;
@@ -487,6 +488,7 @@ form {
     align-items: center;
     justify-content: center;
     color: #000000;
+    border-bottom: 2px solid;
 }
 
 label {
@@ -501,8 +503,8 @@ input {
     margin-top: 5px;
     font-size: 15px;
     font-weight: bold;
-    font-family: Helvetica, sans-serif;
     color: #000;
+    outline: none;
 }
 
 textarea {
@@ -516,58 +518,41 @@ textarea {
     margin-top: 5px;
     font-size: 15px;
     font-weight: bold;
-    font-family: Helvetica, sans-serif;
     color: #000000;
+    outline: none;
 }
 
 footer {
     width: 100%;
-    height: 20%;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5px 0;
-    background-color: #14213D;
+    background-color: #2b2b30;
 }
 
 .social-media {
     width: 80%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 a {
     text-decoration: none;
 }
 
-i {
+.icon-img {
+    width: 25px;
+    transition: 0.5s;
+}
+
+.icon-img:hover {
+    transform: scale(1.2);
+}
+
+h4 {
     color: #fff;
-    font-size: 25px;
-    transition: 0.3s;
-}
-
-.fa-instagram:hover {
-    color: rgb(245, 131, 220);
-}
-
-.fa-facebook-f:hover {
-    color: rgb(5, 92, 190);
-}
-
-.fa-github:hover {
-    color: rgb(0, 0, 0);
-    border-radius: 50%;
-    background-color: #fff;
-}
-
-.fa-linkedin-in:hover {
-    color: rgb(5, 92, 190);
-}
-
-.fa-whatsapp:hover {
-    color: green;
-}
-
-.fa-regular:hover{
-    color: red;
 }
