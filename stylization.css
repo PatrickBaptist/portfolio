@@ -140,7 +140,6 @@
     .profile-card {
         width: 60%;
         height: 60%;
-        border: 2px solid #000000;
         background-color: transparent;
     }
 
@@ -154,7 +153,7 @@
     }
     
     .profile-text {
-        font-size: 15px;
+        font-size: 19px;
     }
 
     .icons-container {
@@ -174,7 +173,8 @@
     }
 
     .profile-sinopse {
-        font-size: 17px;
+        width: 100%;
+        font-size: 16px;
         margin-left: 0;
     }
 }
@@ -185,7 +185,7 @@
     }
 
     .profile-sinopse {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
@@ -232,10 +232,6 @@
         width: 100%;
         height: 80%;
         align-items: start;
-    }
-
-    .profile-sinopse {
-        font-size: 16px;
     }
 
     .divider{
@@ -440,7 +436,7 @@ textarea {
     }
 
     .profile-sinopse {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .project-container {
