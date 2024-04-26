@@ -87,7 +87,7 @@
     }
 
     .profile-sinopse {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
@@ -131,16 +131,16 @@
     
     .profile-content {
         width: 100%;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 20px;
     }
     
     .profile-card {
-        width: 100%;
-        height: 100%;
-        border: none;
+        width: 60%;
+        height: 60%;
+        border: 2px solid #000000;
         background-color: transparent;
     }
 
@@ -163,13 +163,18 @@
     }
 
     .divider{
-        width: 50%;
+        width: 80%;
         margin: none;
         border: 1px solid #000000;
     }
 
+    .container-sinopse {
+        width: 100%;
+        height: 80%
+    }
+
     .profile-sinopse {
-        width: 98%;
+        font-size: 17px;
         margin-left: 0;
     }
 }
@@ -180,7 +185,7 @@
     }
 
     .profile-sinopse {
-        font-size: 13px;
+        font-size: 16px;
     }
 }
 
@@ -204,8 +209,13 @@
         font-size: 3rem;
     }
 
+    .profile-content {
+        height: 80%;
+    }
+
     .profile-card {
         width: 100%;
+        height: 80%;
         border: none;
         box-shadow: none;
     }
@@ -213,9 +223,19 @@
     .name-text {
         color: #000;
     }
-
+    
     .profile-text{
         color: #000;
+    }
+
+    .container-sinopse {
+        width: 100%;
+        height: 80%;
+        align-items: start;
+    }
+
+    .profile-sinopse {
+        font-size: 16px;
     }
 
     .divider{
@@ -225,11 +245,6 @@
     }
 }
 @media (max-width: 570px) {
-
-    .portfolio{
-        display: block;
-
-    }
 
     .content-span {
         font-size: 2.5rem;
@@ -343,26 +358,19 @@
         width: 50px;
         height: 50px;
     }
+
+textarea {
+    display: block;
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+    height: 150px;
+    max-height: 150px;
+    min-height: 150px;
+    border: none;
+    margin-top: 5px;
+    border:  1px solid #08293f;
 }
-
-@media (max-width: 570px) {
-
-    textarea {
-        display: block;
-        width: 200px;
-        max-width: 200px;
-        min-width: 200px;
-        height: 150px;
-        max-height: 150px;
-        min-height: 150px;
-        border: none;
-        margin-top: 5px;
-        border:  1px solid #08293f;
-    }
-
-}
-
-@media (max-width: 570px) {
 
     .content-span {
         width: 90%;
@@ -373,12 +381,16 @@
     }
 
     .profile-image {
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
 
-    .profile-sinopse{
-        margin-top: 0;
+    .name-text {
+        font-size: 20px;
+    }
+
+    .profile-text {
+        font-size: 19px;
     }
 
     textarea {
@@ -390,19 +402,9 @@
         min-height: 150px;
     }
 
-    i {
-        font-size: 30px;
-    }
-
     .form-container {
         width: 100%;
         border: none;
-    }
-    
-    textarea {
-        width: 80%;
-        max-width: 100%;
-        min-width: 100%;
     }
 
     footer {
@@ -426,11 +428,11 @@
 
 @media (max-width: 450px) {
     .name-text{
-        font-size: 16px;
+        font-size: 18px;
     }
     
     .profile-text{
-        font-size: 16px;
+        font-size: 17px;
     }
     
     .profile-container {
@@ -438,7 +440,7 @@
     }
 
     .profile-sinopse {
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .project-container {
@@ -465,10 +467,6 @@
         font-size: 2rem;
     }
 
-    .name-text {
-        font-size: 16px;
-    }
-
     .content-span {
         font-size: 25px;
     }
@@ -491,11 +489,11 @@
     }
 
     .name-text {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .profile-text {
-        font-size: 13px;
+        font-size: 17px;
     }
 }
 
