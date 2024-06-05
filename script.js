@@ -38,68 +38,6 @@ let tecnologias = document.querySelector('.tecnologias')
 let projetos = document.querySelector('.projetos')
 let contato = document.querySelector('.contato')
 
-let h = document.querySelector('.hover')
-let h1 = document.querySelector('.hover1')
-let h2 = document.querySelector('.hover2')
-let h3 = document.querySelector('.hover3')
-let h4 = document.querySelector('.hover4')
-let h5 = document.querySelector('.hover5')
-let h6 = document.querySelector('.hover6')
-let h7 = document.querySelector('.hover7')
-let h8 = document.querySelector('.hover8')
-let h9 = document.querySelector('.hover9')
-let h10 = document.querySelector('.hover10')
-
-
-let img = document.getElementById('img')
-
-img.style.backgroundImage = `url('/imagens/imagem1.jpg')`
-
-h.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem1.jpg')`
-})
-
-h1.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem2.jpg')`
-})
-
-h2.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem3.jpg')`
-})
-
-h3.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem4.jpg')`
-})
-
-h4.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem5.jpg')`
-})
-
-h5.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem6.jpg')`
-})
-
-h6.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem7.jpg')`
-})
-
-h7.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem8.jpg')`
-})
-
-h8.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem9.jpg')`
-})
-
-h10.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/imagem10.png')`
-})
-
-h9.addEventListener('mouseover', function() {
-  img.style.backgroundImage = `url('/imagens/embreve.png')`
-})
-
-
 const el = document.querySelector("#content-title");
 const text = "Desenvolvedor FullStack."
 const interval = 200;
@@ -121,3 +59,25 @@ function showtext(el, text, interval) {
   
 }
 showtext(el, text, interval);
+
+new Glide('.glide', {
+  type: 'carousel',
+  startAt: 0,
+  perView: 4,
+  gap: 30,
+  peek: {
+    before: 60,
+    after: 60
+  },
+  breakpoints: {
+    915: {
+      perView: 3
+    },
+    704: {
+      perView: 2
+    },
+    500: {
+      perView: 1
+    }
+  }
+}).mount()

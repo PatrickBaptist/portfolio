@@ -52,7 +52,7 @@ a  {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2e2f34;
+    background-color: #141414;
     scroll-snap-align: start;
 }
 
@@ -154,7 +154,7 @@ li:hover {
 .content-container {
     width: 100%;
     height: 100vh;
-    background-color: #34353a;
+    background-color: #141414;
     scroll-snap-align: start;
     opacity: 0;
     transition: opacity 0.5s; 
@@ -188,7 +188,6 @@ li:hover {
     align-items: center;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgb(92, 92, 92);
 }
 
 .profile-image {
@@ -204,7 +203,7 @@ li:hover {
     font-weight: bold;
     font-size: 20px;
     margin-top: 15px;
-    color: #000000;
+    color: #fff;
 }
 
 .profile-text {
@@ -212,7 +211,7 @@ li:hover {
     text-align: center;
     width: 80%;
     margin-top: 10px;
-    color: #000000;
+    color: #fff;
 }
 
 .button{
@@ -320,7 +319,6 @@ li:hover {
     height: 80%;
     display: flex;
     overflow: hidden;
-    overflow-x: scroll;
 }
 .content::-webkit-scrollbar {
     height: 10px;
@@ -331,22 +329,62 @@ li:hover {
     background-color: #ffffff;
 }
 
-.project-content {
+.glide {
     width: 100%;
-    height: 180px;
+    height: 100vh;
+}
+
+.glide__track {
+    width: 100%;
+    height: 100%;
+}
+
+.glide__slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.glide__slide {
+    width: 70%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5px;
-    margin: 5px;
-    cursor: alias;
-    transition: .5s;
-    border-radius: 10px;
 }
 
-.project-content:hover {
-    border: 1px solid #fff;
+.img-project {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 40% 50%;
+    border-radius: 5px;
+}
+
+.img-project-wts {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.img-project-vf {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.glide__arrow {
+    color: #fff;
+    background-color: #FCA311;
 }
 
 .button-custom{
@@ -452,7 +490,7 @@ h1 {
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
-    background-color: #2e2f34;
+    background-color: #141414;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -509,20 +547,19 @@ form {
     font-weight: bold;
     width: 100%;   
     border-radius: 5px;
-    color: #000000;
 }
 
 .contact h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000;
-    border-bottom: 2px solid;
+    color: #fff;
 }
 
 label {
     display: block;
     padding: 5px;
+    color: #fff;
 }
 
 input {
@@ -558,7 +595,7 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 5px 0;
-    background-color: #2b2b30;
+    border-top: 2px solid;
 }
 
 .social-media {

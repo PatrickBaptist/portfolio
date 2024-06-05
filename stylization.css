@@ -221,11 +221,11 @@
     }
 
     .name-text {
-        color: #000;
+        color: #fff;
     }
     
     .profile-text{
-        color: #000;
+        color: #fff;
     }
 
     .container-sinopse {
@@ -327,7 +327,7 @@
         height: 2px;
         background: #FCA311;
         transform: translateY(-10px);
-        box-shadow: 0 10px #000000;
+        box-shadow: 0 10px #fff;
         transition: 1s;
     }
 
