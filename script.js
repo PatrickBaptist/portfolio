@@ -60,24 +60,27 @@ function showtext(el, text, interval) {
 }
 showtext(el, text, interval);
 
-new Glide('.glide', {
-  type: 'carousel',
-  startAt: 0,
-  perView: 4,
-  gap: 30,
-  peek: {
+document.addEventListener('DOMContentLoaded', function(){
+
+  const glide = new Glide('.glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 4,
+    peek: {
+    gap: 30,
     before: 60,
     after: 60
-  },
-  breakpoints: {
-    915: {
-      perView: 3
     },
-    704: {
-      perView: 2
-    },
-    500: {
-      perView: 1
+    breakpoints: {
+      915: {
+        perView: 3
+      },
+      704: {
+        perView: 2
+      },
+      500: {
+        perView: 1
+      }
     }
-  }
-}).mount()
+  }).mount()
+})
