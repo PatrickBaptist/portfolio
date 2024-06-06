@@ -26,17 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
   let glide = new Glide('.glide', {
     type: 'carousel',
     startAt: 0,
-    perView: 4,
+    perView: 3,
     peek: {
-      gap: 30,
-      before: 60,
-      after: 60
+      gap: 40,
+      before: 15,
+      after: 15
     },
     breakpoints: {
-      915: {
-        perView: 3
-      },
-      704: {
+      768: {
         perView: 2
       },
       500: {
