@@ -27,12 +27,15 @@ document.addEventListener('DOMContentLoaded', function () {
     type: 'carousel',
     startAt: 0,
     perView: 3,
-    gap: 30,
+    peek: {
+      before: 20,
+      after: 20
+    },
     breakpoints: {
       768: {
         perView: 2
       },
-      500: {
+      532: {
         perView: 1
       }
     }

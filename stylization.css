@@ -81,10 +81,6 @@
 }
 
 @media (max-width: 831px) {
-    .button-custom{
-        width: 150px;
-        height: 30px;
-    }
 
     .profile-sinopse {
         font-size: 17px;

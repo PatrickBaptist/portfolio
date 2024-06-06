@@ -348,8 +348,6 @@ li:hover {
 }
 
 .glide__slide {
-    width: 70%;
-    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -357,34 +355,30 @@ li:hover {
 }
 
 .img-project {
-    width: 300px;
-    height: 300px;
+    width: 95%;
+    height: 50%;
     object-fit: cover;
     object-position: 40% 50%;
     border-radius: 5px;
+    border: 1px solid #fff;
 }
 
 .img-project-wts {
-    width: 100%;
-    height: 300px;
+    width: 95%;
+    height: 50%;
     object-fit: cover;
     object-position: 50% 50%;
     border-radius: 5px;
-    margin-bottom: 10px;
+    border: 1px solid #fff;
 }
 
 .img-project-vf {
-    width: 100%;
-    height: 300px;
+    width: 95%;
+    height: 50%;
     object-fit: cover;
     object-position: 50% 50%;
     border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.glide__arrow {
-    color: #fff;
-    background-color: #FCA311;
+    border: 1px solid #fff;
 }
 
 .button-custom{
@@ -446,11 +440,11 @@ li:hover {
     margin: 10px 0;
     text-decoration: none;
     overflow: hidden;
-    overflow-y: scroll;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     overflow: hidden;
-    -webkit-box-orient: vertical; 
+    -webkit-box-orient: vertical;
+    text-align: center;
 }
 
 .content-project {
