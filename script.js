@@ -14,6 +14,29 @@ document.addEventListener('DOMContentLoaded', function () {
   sections.forEach(section => {
       observer.observe(section)
   })
+
+  let glide = new Glide('.glide', {
+    type: 'carousel',
+    startAt: 0,
+    perView: 4,
+    peek: {
+    gap: 30,
+    before: 60,
+    after: 60
+    },
+    breakpoints: {
+      915: {
+        perView: 3
+      },
+      704: {
+        perView: 2
+      },
+      500: {
+        perView: 1
+      }
+    }
+  }).mount()
+  
 })
 
 let listItem = document.querySelectorAll('.nav li')
@@ -59,28 +82,3 @@ function showtext(el, text, interval) {
   
 }
 showtext(el, text, interval);
-
-document.addEventListener('DOMContentLoaded', function(){
-
-  let glide = new Glide('.glide', {
-    type: 'carousel',
-    startAt: 0,
-    perView: 4,
-    peek: {
-    gap: 30,
-    before: 60,
-    after: 60
-    },
-    breakpoints: {
-      915: {
-        perView: 3
-      },
-      704: {
-        perView: 2
-      },
-      500: {
-        perView: 1
-      }
-    }
-  }).mount()
-})
