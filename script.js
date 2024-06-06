@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
   }).mount()
-  
+
 })
 
 let listItem = document.querySelectorAll('.nav li')
@@ -81,4 +81,5 @@ function showtext(el, text, interval) {
   }, interval);
   
 }
+
 showtext(el, text, interval);
