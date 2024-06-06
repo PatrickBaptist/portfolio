@@ -62,7 +62,7 @@ showtext(el, text, interval);
 
 document.addEventListener('DOMContentLoaded', function(){
 
-  const glide = new Glide('.glide', {
+  new Glide('.glide', {
     type: 'carousel',
     startAt: 0,
     perView: 4,
