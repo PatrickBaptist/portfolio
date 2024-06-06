@@ -37,9 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }).mount()
 
-})
-
-let listItem = document.querySelectorAll('.nav li')
+  
+  let listItem = document.querySelectorAll('.nav li')
 
 function ativo () {
   listItem.forEach((index) => index.classList.remove('ativo'))
@@ -69,7 +68,7 @@ function showtext(el, text, interval) {
   var char = text.split("").reverse();
   
   var typer = setInterval(function() {
-  
+    
     if (!char.length) {
         return clearInterval(typer)
     }
@@ -83,3 +82,4 @@ function showtext(el, text, interval) {
 }
 
 showtext(el, text, interval);
+})
