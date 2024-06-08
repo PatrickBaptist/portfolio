@@ -311,6 +311,10 @@ li:hover {
     transition: opacity 0.5s; 
 }
 
+.projects{
+    display: none;
+}
+
 .project-container.in-view {
     opacity: 1;
 }
