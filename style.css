@@ -622,3 +622,8 @@ a {
 h4 {
     color: #fff;
 }
+
+.verificado {
+    width: 20px;
+    height: 20px;
+}
