@@ -1,14 +1,12 @@
-@media (max-width: 1101px) {
-    #content-title {
-        font-size: 4rem;
-    }
-
+@media (max-width: 1129px) {
     .name-text {
         font-size: 16px;
     }
-    
-    .profile-text {
-        font-size: 14px;
+}
+
+@media (max-width: 1101px) {
+    #content-title {
+        font-size: 25px;
     }
 }
 
@@ -18,10 +16,6 @@
     }
 
     .name-text {
-        font-size: 16px;
-    }
-    
-    .profile-text {
         font-size: 15px;
     }
     
@@ -32,16 +26,8 @@
 }
 
 @media (max-width: 915px) {
-    #content-title {
-        font-size: 4rem;
-    }
-
     .name-text {
         font-size: 14px;
-    }
-    
-    .profile-text {
-        font-size: 15px;
     }
 
     .content-form {
@@ -80,6 +66,17 @@
 
 }
 
+@media (max-width: 850px) {
+    #content-title {
+        font-size: 20px;
+    }
+
+    .name-text {
+        font-size: 12px;
+    }
+
+}
+
 @media (max-width: 831px) {
 
     .profile-sinopse {
@@ -88,12 +85,14 @@
 }
 
 @media (max-width: 794px) {
-    .name-text {
-        font-size: 12px;
-    }
-    
     .profile-text {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 750px) {
+    .name-text {
+        font-size: 11px;
     }
 }
 
@@ -134,7 +133,7 @@
     }
     
     .profile-card {
-        width: 60%;
+        width: 100%;
         height: 60%;
         background-color: transparent;
     }
@@ -145,7 +144,11 @@
     }
     
     .name-text {
-        font-size: 20px;
+        font-size: 25px;
+    }
+
+    #content-title {
+        font-size: 28px;
     }
     
     .profile-text {
@@ -176,10 +179,6 @@
 }
 
 @media (max-width: 665px) {
-    #content-title {
-        font-size: 3.4rem;
-    }
-
     .profile-sinopse {
         font-size: 15px;
     }
@@ -201,10 +200,6 @@
 }
 
 @media (max-width: 600px) {
-    #content-title {
-        font-size: 3rem;
-    }
-
     .profile-content {
         height: 80%;
     }
@@ -377,10 +372,6 @@
         height: 150px;
     }
 
-    .name-text {
-        font-size: 20px;
-    }
-
     .profile-text {
         font-size: 19px;
     }
@@ -455,6 +446,10 @@
 
     label {
         font-size: 15px;
+    }
+
+    .social-media {
+        width: 100%;
     }
 }
 

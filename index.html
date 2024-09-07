@@ -12,35 +12,21 @@
 </head>
 <body>
 
-<section class="hero-container" id="section1">
-    
-    <header class="header-toggle">
-        <div class="port-toggle">
-            
-            <div class="menuToggle"></div>
-        </div>
-        <nav class="nav">
-            <ul class="nav-list">
-                <a class="home" href="#section1" id="menuSection1"><li>Home</li></a>
-                <a class="tecnologias" href="#section2" id="menuSection2"><li>Tecnologias</li></a>
-                <a class="projetos" href="#section3" id="menuSection3"><li>Projetos</li></a>
-                <a class="contato" href="#section4"  id="menuSection4"><li>Contato</li></a>
-            </ul>
-        </nav>
-    </header>
-
-    <div id="container-title">
-        <span id="content-title"></span>
+<header class="header-toggle">
+    <div class="port-toggle">
+        
+        <div class="menuToggle"></div>
     </div>
+    <nav class="nav">
+        <ul class="nav-list">
+            <a class="tecnologias" href="#section2" id="menuSection2"><li>Tecnologias</li></a>
+            <a class="projetos" href="#section3" id="menuSection3"><li>Projetos</li></a>
+            <a class="contato" href="#section4"  id="menuSection4"><li>Contato</li></a>
+        </ul>
+    </nav>
+</header>
 
-    <div class=container-arrows>
-        <a href="#section2">
-            <img class=arrows src="./imagens/icons/flechas.png" alt="arrows">
-        </a>
-    </div>
 
-
-</section>
 <section class="content-container" id="section2">
     <div class="profile-container">
         <div class="profile-content">
@@ -49,7 +35,10 @@
                 <span class="name-text">Patrick Baptista Coutinho
                     <img class="verificado" src="./imagens/icons/verificado.png" alt="verificado">
                 </span>
-                <span class="profile-text">Desenvolvedor FullStack</span>
+                <div id="container-title">
+                    <span id="content-title"></span>
+                </div>
+
                 <a href="https://github.com/PatrickBaptist" target="_blank">
                     <button class="button item1">
                         Conhecer github
