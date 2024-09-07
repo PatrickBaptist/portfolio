@@ -2,10 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const sections = document.querySelectorAll('section');
   const listItem = document.querySelectorAll('.nav li');
   const menuToggle = document.querySelector('.menuToggle');
-  const header = document.querySelector('.header-toggle');
-  const el = document.querySelector("#content-title");
-  const text = "Desenvolvedor FullStack.";
-  const interval = 200;
+  const header = document.querySelector('.header-toggle')
 
   // IntersectionObserver para adicionar/remover classe 'in-view'
   const observer = new IntersectionObserver(entries => {
@@ -24,13 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Inicialização do Glide.js
   let glide = new Glide('.glide', {
-    type: 'carousel',
     startAt: 0,
+    type: 'carousel',
     perView: 3,
-    peek: {
-      before: 20,
-      after: 20
-    },
     breakpoints: {
       768: {
         perView: 2
@@ -55,13 +48,17 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   // Função para exibir texto com intervalo
+  const el = document.querySelector("#content-title");
+  const text = "Desenvolvedor FullStack.";
+  const interval = 200;
+  
   function showtext(el, text, interval) {
-    var char = text.split("").reverse();
-    var typer = setInterval(function () {
+    let char = text.split("").reverse();
+    let typer = setInterval(function () {
       if (!char.length) {
         return clearInterval(typer);
       }
-      var next = char.pop();
+      let next = char.pop();
       el.innerHTML += next;
     }, interval);
   }
