@@ -24,12 +24,22 @@ document.addEventListener('DOMContentLoaded', function () {
     startAt: 0,
     type: 'carousel',
     perView: 3,
+    autoplay: 4000,
+    hoverpause: false,
     breakpoints: {
       768: {
-        perView: 2
+        perView: 2,
+        peek: {
+          before: 30,
+          after: 30
+        }
       },
       532: {
-        perView: 1
+        perView: 1,
+        peek: {
+          before: 20,
+          after: 20
+        }
       }
     }
   }).mount();

@@ -90,6 +90,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .glide__arrows  {
+        display: none;
+    }
+}
+
 @media (max-width: 750px) {
     .name-text {
         font-size: 11px;

@@ -276,7 +276,11 @@ li:hover {
 .icon-item {
     width: 25px;
     height: 25px;
+    transition: 0.5s;
+}
 
+.icon-item:hover {
+    transform: scale(1.2);
 }
 
 .container-sinopse {
@@ -615,7 +619,6 @@ a {
 .icon-img {
     width: 25px;
     transition: 0.5s;
-    object-fit: cover;
 }
 
 .icon-img:hover {
