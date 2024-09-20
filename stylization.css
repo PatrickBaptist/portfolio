@@ -94,6 +94,9 @@
     .glide__arrows  {
         display: none;
     }
+    .glide__track {
+        width: 100%;
+    }
 }
 
 @media (max-width: 750px) {

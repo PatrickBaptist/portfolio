@@ -48,7 +48,7 @@ a  {
 
 .hero-container {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +154,7 @@ li:hover {
 
 .content-container {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-color: #141414;
     scroll-snap-align: start;
     opacity: 0;
@@ -303,7 +303,7 @@ li:hover {
 
 .project-container {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,7 +341,6 @@ li:hover {
 
 .glide {
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -453,9 +452,9 @@ li:hover {
     text-decoration: none;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    overflow: hidden;
     -webkit-box-orient: vertical;
+    line-clamp: 3;
+    overflow: hidden;
     text-align: center;
 }
 
@@ -495,7 +494,7 @@ h1 {
 .container-form {
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-color: #141414;
     display: flex;
     flex-direction: column;
@@ -503,7 +502,8 @@ h1 {
     justify-content: center;
     scroll-snap-align: start;
     opacity: 0;
-    transition: opacity 0.5s; 
+    transition: opacity 0.5s;
+    box-sizing: border-box;
 }
 
 .container-form.in-view {
