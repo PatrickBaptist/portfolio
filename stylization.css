@@ -288,7 +288,12 @@
     }
 
     .img-header {
-        margin-top: 25px;
+        margin-top: 15px;
+    }
+
+    .icon-header {
+        width: 35px;
+        height: 35px;
     }
     
     .header-toggle .nav-list {
