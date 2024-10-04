@@ -70,6 +70,7 @@ a  {
     position: fixed;
     top: 0;
     z-index: 2;
+    padding: 0 45px;
     background-color: #2b2b2b;
 }
 
@@ -79,12 +80,11 @@ a  {
     display: flex;
     align-items: center;
     justify-content: start;
-    margin-left: 18px;
 }
 
 .icon-header {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
 }
 
 .nav {

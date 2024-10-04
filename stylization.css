@@ -261,6 +261,7 @@
         justify-content: space-between;
         align-items: center;
         z-index: 2;
+        padding: 0;
     }
 
     .port-toggle {
@@ -289,6 +290,7 @@
 
     .img-header {
         margin-top: 15px;
+        margin-left: 18px;
     }
 
     .icon-header {
