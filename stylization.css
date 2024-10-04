@@ -209,6 +209,11 @@
 }
 
 @media (max-width: 600px) {
+
+    .header-toggle {
+        background-color: transparent;
+    }
+
     .profile-content {
         height: 80%;
     }
@@ -255,7 +260,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 40px 20px;
         z-index: 2;
     }
 
@@ -281,6 +285,10 @@
 
     .nav ul li{
         color: black;
+    }
+
+    .img-header {
+        margin-top: 25px;
     }
     
     .header-toggle .nav-list {
@@ -357,12 +365,12 @@
 
     textarea {
         display: block;
-        width: 200px;
-        max-width: 200px;
-        min-width: 200px;
-        height: 150px;
-        max-height: 150px;
-        min-height: 150px;
+        width: 300px;
+        max-width: 300px;
+        min-width: 300px;
+        height: 200px;
+        max-height: 200px;
+        min-height: 200px;
         border: none;
         margin-top: 5px;
         border:  1px solid #08293f;
@@ -387,15 +395,6 @@
 
     .projects{
         display: block;
-    }
-
-    textarea {
-        width: 200px;
-        max-width: 200px;
-        min-width: 200px;
-        height: 150px;
-        max-height: 150px;
-        min-height: 150px;
     }
 
     .form-container {
